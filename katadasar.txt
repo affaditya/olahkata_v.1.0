@@ -322,9 +322,9 @@ agul
 agun
 agung
 agus
-Agustus
+agustus
 agut
-Ahad
+ahad
 ahimsa
 ahistoris
 ahkam
@@ -458,7 +458,7 @@ akualung
 akuamarin
 akuarel
 akuarium
-Akuarius
+akuarius
 akuatik
 akuifer
 akuisisi
@@ -802,7 +802,7 @@ anca
 ancam
 ancang
 ancol
-Anda
+anda
 andai
 andal
 andalusit
@@ -1176,7 +1176,7 @@ apraksia
 apresiasi
 apresiatif
 apresorium
-April
+april
 apriori
 aprit
 apron
@@ -5796,7 +5796,7 @@ egosentrisitas
 egosentrisme
 egrang
 egresif
-Ehe
+ehe
 eidetik
 eigendom
 eikosan
@@ -16253,7 +16253,7 @@ megah
 megak
 megakredit
 megalit
-Megalitikum
+megalitikum
 megalomania
 megalomaniak
 megalopolis

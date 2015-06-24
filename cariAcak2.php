@@ -69,20 +69,25 @@ class cariAcak {
         $arrSplit = str_split($this->dataInput);
         sort($arrSplit);
         for ($a = 0; $a < count($this->dataPembanding); $a++) {
-            $temp = $this->panjangPembanding[$a];
             $arrSplit2 = str_split($this->dataPembanding[$a]);
             sort($arrSplit2);
+            $temp = $this->panjangPembanding[$a];
             if ($this->panjangPembanding[$a] <= $this->panjangInput) {
+                //echo $this->dataPembanding[$a];
+                $tempX = -1;
                 for ($b = 1; $b < $this->panjangPembanding[$a] + 1; $b++) {
-                    $i = 0;
+                    $i = $b - 1;
                     $ketemu = false;
                     while (!$ketemu && $i < $this->panjangInput) {
                         if ($arrSplit2[$b] == $arrSplit[$i]) {
-                            $hasil2 = count(array_keys($arrSplit2, $arrSplit2[$b]));
-                            $hasil1 = count(array_keys($arrSplit, $arrSplit[$i]));
-                            if ($hasil2 > $hasil1) {
-                                break;
+                            if ($i == $tempX && $arrSplit2[$b] != $arrSplit[$i+1]) {
+                                if($arrSplit[$i+1]==null){
+                                    break;
+                                } else {
+                                    break;
+                                }
                             } else {
+                                $tempX = $i;
                                 $temp = $temp - 1;
                                 $ketemu = true;
                                 break;
@@ -94,6 +99,8 @@ class cariAcak {
                 if ($temp == 0) {
                     array_push($this->dataOutput, $this->dataPembanding[$a]);
                     array_push($this->panjangOutput, $this->panjangPembanding[$a]);
+                } else {
+                    
                 }
             }
         }
@@ -149,7 +156,6 @@ class cariAcak {
                 }
                 $i++;
             }
-            sort($arr);
             if ($count != 0) {
                 array_push($this->dataSave, $arr);
                 array_push($this->panjangSave, $count);

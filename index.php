@@ -7,7 +7,7 @@
             </table>
         </form>
         <?php
-        include '/cariAcak.php';
+        include 'cariAcak.php';
         $url = "katadasar.txt";
         $cari = new cariAcak($url);
         if (isset($_POST['proses'])) {
